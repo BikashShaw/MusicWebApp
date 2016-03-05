@@ -13,7 +13,6 @@ import java.util.List;
  * Created by Bikash on 2/28/2016.
  */
 @RestController
-@CrossOrigin(origins = "*")
 public class MusicRestController {
 
     @Autowired
