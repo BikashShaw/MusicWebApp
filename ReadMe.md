@@ -1,0 +1,1 @@
+AngularJS crud with Spring REST and MongoDB

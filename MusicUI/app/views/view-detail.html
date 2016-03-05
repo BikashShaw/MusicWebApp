@@ -1,0 +1,38 @@
+<form data-ng-submit="save()" ng-cloak class="ng-cloak">
+<div class="form-group">
+  <label for="txtName">Artist Name: </label>
+  <input type="text" id="txtName" class="form-control" data-ng-model="Item.name" 
+  data-ng-model-options="{ updateOn: 'submit' }" />
+</div>
+<div class="form-group">
+  <label for="cboGenre">Genre:</label>
+  <select name="cboGenre" id="cboGenre" class="form-control" data-ng-model="Item.genre" data-ng-model-options="{ updateOn: 'submit' }" >
+    <option></option>
+    <option value="Rock">Rock</option>
+    <option value="Alternative">Alternative</option>
+    <option value="Pop">Pop</option>
+    <option value="Hip-Pop">Hip-Pop</option>
+  </select>
+</div>
+<div class="form-group">
+  <label for="cboRating">Rating:</label>
+  <select name="cboRating" id="cboRating" class="form-control" data-ng-model="Item.rating" data-ng-model-options="{ updateOn: 'submit' }">
+    <option></option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select>
+</div>
+<div class="form-group">
+  <label for="txtPrice">Price: </label>
+  <input type="text" id="txtPrice" class="form-control" data-ng-model="Item.price" 
+  data-ng-model-options="{ updateOn: 'submit' }" />
+</div>
+<div class="form-group">
+  <button type="submit" class="btn btn-success">Save</button>
+  <button data-ng-click="cancel()" class="btn btn-primary" >Cancel</button>
+ <button data-ng-click="removeItem()" class="btn btn-danger" >Delete</button>
+</div>
+</form>
