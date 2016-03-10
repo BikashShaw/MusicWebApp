@@ -1,1 +1,1 @@
-AngularJS crud with Spring REST and MongoDB
+AngularJS CRUD with Spring REST and MongoDB
